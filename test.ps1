@@ -1,1 +1,0 @@
-Test-Connection www.google.co.uk
