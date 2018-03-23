@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Configuration>
+    <ViewDefinitions>
+        
+
+        <View>
+            <Name>MorNandoPVSGetDevice</Name>
+            <ViewSelectedBy>
+                <TypeName>MorNando.PVS.GetDevice</TypeName>
+            </ViewSelectedBy>
+
+            <TableControl>
+                
+		<TableHeaders>
+                    <TableColumnHeader>
+                        <Label>DeviceName</Label>
+			<Width>20</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>DeviceMac</Label>
+			<Alignment>left</Alignment>
+			<Width>20</Width>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>CollectionName</Label>
+			<Width>18</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>Active</Label>
+			<Width>8</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>DomainController</Label>
+			<Width>45</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+                </TableHeaders>
+
+                <TableRowEntries>
+                    <TableRowEntry>
+                        <TableColumnItems>
+                            <TableColumnItem>
+                                <PropertyName>DeviceName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>DeviceMac</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>CollectionName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>Active</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>DomainControllerName</PropertyName>
+                            </TableColumnItem>
+                                                    </TableColumnItems>
+                    </TableRowEntry>
+                </TableRowEntries>
+
+            </TableControl>        
+
+	</View>
+
+
+<View>
+            <Name>MorNandoPVSGetDeviceExtra</Name>
+            <ViewSelectedBy>
+                <TypeName>MorNando.PVS.GetDeviceExtra</TypeName>
+            </ViewSelectedBy>
+
+            <TableControl>
+                
+		<TableHeaders>
+                    <TableColumnHeader>
+                        <Label>DeviceName</Label>
+			<Width>18</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>DeviceMac</Label>
+			<Alignment>left</Alignment>
+			<Width>18</Width>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>IPAddress</Label>
+			<Width>13</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>PVSServer</Label>
+			<Width>17</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>ImageName</Label>
+			<Width>27</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Label>CollectionName</Label>
+			<Width>17</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+                </TableHeaders>
+
+                <TableRowEntries>
+                    <TableRowEntry>
+                        <TableColumnItems>
+                            <TableColumnItem>
+                                <PropertyName>DeviceName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>DeviceMac</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>IPAddress</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>ServerName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>ImageName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>CollectionName</PropertyName>
+                            </TableColumnItem>
+                                                    </TableColumnItems>
+                    </TableRowEntry>
+                </TableRowEntries>
+
+            </TableControl>        
+
+	</View>
+
+<View>
+            <Name>MorNandoPVSGetDiskInfo</Name>
+            <ViewSelectedBy>
+                <TypeName>MorNando.PVS.GetDiskInfo</TypeName>
+            </ViewSelectedBy>
+
+            <TableControl>
+                
+		<TableHeaders>
+                    <TableColumnHeader>
+                        <Label>ImageName</Label>
+			<Width>22</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>DeviceCount</Label>
+			<Alignment>left</Alignment>
+			<Width>13</Width>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>Locked</Label>
+			<Width>8</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>DiskSize(GB)</Label>
+			<Width>15</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>ActiveDate</Label>
+			<Width>13</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>FilePath</Label>
+			<Width>40</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+                </TableHeaders>
+
+                <TableRowEntries>
+                    <TableRowEntry>
+                        <TableColumnItems>
+                            <TableColumnItem>
+                                <PropertyName>DiskLocatorName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>DeviceCount</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>Locked</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <scriptblock>$_.DiskSize/1GB</scriptblock>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>ActiveDate</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>OriginalFile</PropertyName>
+                            </TableColumnItem>
+                                                    </TableColumnItems>
+                    </TableRowEntry>
+                </TableRowEntries>
+
+            </TableControl>        
+
+	</View>
+
+<View>
+            <Name>MorNandoPVSGetServerStatus</Name>
+            <ViewSelectedBy>
+                <TypeName>MorNando.PVS.GetPVSserverStatus</TypeName>
+            </ViewSelectedBy>
+
+            <TableControl>
+                
+		<TableHeaders>
+                    <TableColumnHeader>
+                        <Label>ServerName</Label>
+			<Width>22</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>IPAddress</Label>
+			<Alignment>left</Alignment>
+			<Width>13</Width>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>Status</Label>
+			<Width>8</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>DeviceCount</Label>
+			<Width>15</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>Port</Label>
+			<Width>10</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>ServerID</Label>
+			<Width>40</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+                </TableHeaders>
+
+                <TableRowEntries>
+                    <TableRowEntry>
+                        <TableColumnItems>
+                            <TableColumnItem>
+                                <PropertyName>ServerName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>IPAddress</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>Status</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>DeviceCount</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>Port</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>ServerID</PropertyName>
+                            </TableColumnItem>
+                                                    </TableColumnItems>
+                    </TableRowEntry>
+                </TableRowEntries>
+
+            </TableControl>        
+
+	</View>
+
+<View>
+            <Name>MorNandoPVSGetServerInfo</Name>
+            <ViewSelectedBy>
+                <TypeName>MorNando.PVS.GetPVSserverInfo</TypeName>
+            </ViewSelectedBy>
+
+            <TableControl>
+                
+		<TableHeaders>
+                    <TableColumnHeader>
+                        <Label>ServerName</Label>
+			<Width>22</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>IPAddress</Label>
+			<Alignment>left</Alignment>
+			<Width>13</Width>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>Active</Label>
+			<Width>8</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>MaxBootDevicesAllowed</Label>
+			<Width>23</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    
+                </TableHeaders>
+
+                <TableRowEntries>
+                    <TableRowEntry>
+                        <TableColumnItems>
+                            <TableColumnItem>
+                                <PropertyName>ServerName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>IPAddress</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>Active</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>maxBootDevicesAllowed</PropertyName>
+                            </TableColumnItem>
+                                                    </TableColumnItems>
+                    </TableRowEntry>
+                </TableRowEntries>
+
+            </TableControl>        
+
+	</View>
+
+<View>
+            <Name>MorNandoPVSGetcollection</Name>
+            <ViewSelectedBy>
+                <TypeName>MorNando.PVS.GetPVScollection</TypeName>
+            </ViewSelectedBy>
+
+            <TableControl>
+                
+		<TableHeaders>
+                    <TableColumnHeader>
+                        <Label>collectionName</Label>
+			<Width>20</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>ActiveDeviceCount</Label>
+			<Alignment>left</Alignment>
+			<Width>18</Width>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>DeviceCount</Label>
+			<Width>13</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    <TableColumnHeader>
+                        <Label>Description</Label>
+			<Width>40</Width>
+			<Alignment>left</Alignment>
+                    </TableColumnHeader>
+		    
+                </TableHeaders>
+
+                <TableRowEntries>
+                    <TableRowEntry>
+                        <TableColumnItems>
+                            <TableColumnItem>
+                                <PropertyName>collectionName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>activeDeviceCount</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>deviceCount</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>description</PropertyName>
+                            </TableColumnItem>
+                                                    </TableColumnItems>
+                    </TableRowEntry>
+                </TableRowEntries>
+
+            </TableControl>        
+
+	</View>
+
+    </ViewDefinitions>
+</Configuration>
