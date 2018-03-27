@@ -1,5 +1,3 @@
-﻿$erroractionpreference = 'silentlycontinue'
-
 ###GLOBAL VARIABLES START###
 
 $erroractionpreference = 'continue'
@@ -9,9 +7,7 @@ $global:WorkerDiskInfo = "$scriptpath\Results\WorkerDiskInfo.csv"
 $global:LongtermExcludedWorkers = get-content "$scriptpath\Config\LongTerm_ExcludedServers.txt"
 $global:ShortTermExcludedWorkers = get-content "$scriptpath\Config\ShortTerm_ExcludedServers.txt"
 
-
 ###GLOBAL VARIABLES END###
-
 
 ###FUNCTIONS START###
 
@@ -52,6 +48,8 @@ Function Get-WorkerDiskInfo {
 
     } 
 } # Get-WorkerDiskInfo Function End
+
+###FUNCTIONS END###
 
 $workers = get-ADworkerservers
 
